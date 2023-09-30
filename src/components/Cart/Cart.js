@@ -4,7 +4,14 @@ import classes from "./Cart.module.css";
 const Cart = (props) => {
   const cartItems = (
     <ul className={classes["cart-items"]}>
-      {[{ id: "c1", name: "sushi", amount: "2", price: "12.99" }].map((x) => (
+      {[
+        {
+          id: "c1",
+          name: "sushi",
+          amount: "2",
+          price: "12.99",
+        },
+      ].map((x) => (
         <li>{x.name}</li>
       ))}
     </ul>
