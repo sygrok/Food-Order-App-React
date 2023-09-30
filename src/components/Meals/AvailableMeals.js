@@ -36,6 +36,7 @@ const AvailableMeals = () => {
         <ul>
           {DUMMY_MEALS.map((x) => (
             <MealItem
+              id={x.id}
               key={Math.random + x.name}
               name={x.name}
               price={x.price}
